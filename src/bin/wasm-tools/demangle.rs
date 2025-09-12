@@ -2,6 +2,12 @@ use anyhow::{Result, bail};
 use wasm_encoder::{IndirectNameMap, NameMap, NameSection, RawSection};
 use wasmparser::{KnownCustom, Name, NameSectionReader, Parser, Payload::*};
 
+/*
+        TODO: does this actually work with -g?
+        show input and output
+*/
+
+
 /// Demangle Rust and C++ symbol names in the `name` section.
 ///
 /// This command will detect a `name` section in a wasm executable and demangle

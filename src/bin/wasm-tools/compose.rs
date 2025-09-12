@@ -6,6 +6,13 @@ use std::path::{Path, PathBuf};
 use wasm_compose::{composer::ComponentComposer, config::Config};
 use wasmparser::Validator;
 
+/*
+        TODO: examples
+              -c and what should be in the config files
+              -d and what should be provided there
+              -p and what the path should contain
+*/
+
 /// WebAssembly component composer.
 ///
 /// A tool for composing WebAssembly components together.

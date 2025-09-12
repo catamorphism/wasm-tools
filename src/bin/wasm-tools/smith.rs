@@ -5,6 +5,21 @@ use std::path::PathBuf;
 use std::process;
 use wasm_smith::Module;
 
+/*
+        TODO:
+        use --ensure-termination and --fuel
+
+        use -c and show an example JSON config file
+
+        use --available-imports and show the contents of a file used with it
+        likeise with --exports
+        likewise with --module-shape
+
+        --allowed-instructions -- what does this look like?
+
+        show a sequence of proposals
+*/
+
 /// A WebAssembly test case generator.
 ///
 /// Given an arbitrary input seed, `wasm-smith` generates a valid WebAssembly
@@ -12,7 +27,7 @@ use wasm_smith::Module;
 /// through a decision tree. Given the same input seed, `wasm-smith` will always
 /// generate the same output WebAssembly module; it is deterministic. Larger
 /// input seeds tend to generate larger WebAssembly modules. Small changes to
-/// the input seed tends to produce a small change to the output WebAssembly
+/// the input seed tend to produce a small change to the output WebAssembly
 /// module. These properties, taken together, make `wasm-smith` suitable for use
 /// not just with purely random input seeds, but also with coverage-guided,
 /// mutation-based fuzzing engines like libFuzzer and AFL.
@@ -21,7 +36,7 @@ use wasm_smith::Module;
 ///
 /// Generate a WebAssembly module from 100 bytes of random data:
 ///
-/// $ head -c 100 /dev/urandom | wasm-smith -o test.wasm
+/// $ head -c 100 /dev/urandom | wasm-tools smith -o test.wasm
 ///
 /// ## Exit Codes
 ///

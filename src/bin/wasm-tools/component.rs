@@ -18,6 +18,10 @@ use wit_component::{
 };
 use wit_parser::{LiftLowerAbi, Mangling, ManglingAndAbi, PackageId, Resolve};
 
+/*
+        TODO: check every subcommand
+*/
+
 /// WebAssembly wit-based component tooling.
 #[derive(Parser)]
 pub enum Opts {

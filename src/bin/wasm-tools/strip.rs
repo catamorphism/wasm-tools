@@ -3,6 +3,13 @@ use std::mem;
 use wasm_encoder::{ComponentSectionId, Encode, RawSection, Section};
 use wasmparser::{Parser, Payload::*};
 
+/*
+        TODO: does this really work with -g?
+              Example with -d and a regex
+
+              Show input and output files
+*/
+
 /// Removes custom sections from an input WebAssembly file.
 ///
 /// This command will by default strip all custom sections such as DWARF

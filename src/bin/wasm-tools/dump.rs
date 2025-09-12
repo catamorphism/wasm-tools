@@ -4,6 +4,12 @@ use std::io::Write;
 use termcolor::{Color, ColorSpec, WriteColor};
 use wasmparser::*;
 
+/*
+TODO: does this actually work with -g?
+
+Explain output format
+*/
+
 /// Debugging utility to dump information about a wasm binary.
 ///
 /// This can be useful to figure out precisely how each byte of a wasm binary is

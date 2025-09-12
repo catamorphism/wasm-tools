@@ -4,6 +4,14 @@ use std::ops::Range;
 use termcolor::WriteColor;
 use wasmparser::{Encoding, Parser, Payload::*};
 
+/*
+        TODO: does this really work with -g?
+
+        Explain output format
+
+        In general: for which commands does verbose output actually matter?
+*/
+
 /// Dumps information about sections in a WebAssembly file.
 ///
 /// This is a relatively incomplete subcommand and is generally intended to just

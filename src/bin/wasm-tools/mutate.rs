@@ -2,6 +2,20 @@ use anyhow::Result;
 use clap::Parser;
 use wasm_mutate::ErrorKind;
 
+/*
+        TODO: Check if -g really works with this
+        Which features/proposals are supported?
+
+        The explanation of -f isn't good
+
+        show example input/output
+
+        --seed 1234 doesn't work with the example I tried
+
+        How do you choose a seed?
+*/
+
+
 /// A WebAssembly test case mutator.
 ///
 /// `wasm-mutate` takes in an existing Wasm module and then applies a

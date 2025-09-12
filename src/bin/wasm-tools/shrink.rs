@@ -5,6 +5,17 @@ use std::path::{Path, PathBuf};
 use tempfile::NamedTempFile;
 use wasm_shrink::{IsInteresting, WasmShrink};
 
+/*
+        TODO:
+        show an example file and example script
+
+        show -g and what the output looks like
+
+        show -s
+
+See https://github.com/bytecodealliance/wasm-tools/issues/2051
+*/
+
 /// Shrink a Wasm file while maintaining a property of interest (such as triggering
 /// a compiler bug).
 ///
