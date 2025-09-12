@@ -26,7 +26,7 @@ Examples:
 
 Exit status:
     0 if OK,
-    1 to indicate a parse error." )]
+    nonzero to indicate a parse error." )]
 pub struct Opts {
     #[clap(flatten)]
     generate_dwarf: wasm_tools::GenerateDwarfArg,

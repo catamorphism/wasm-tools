@@ -5,8 +5,6 @@ use termcolor::{Color, ColorSpec, WriteColor};
 use wasmparser::*;
 
 /*
-TODO: does this actually work with -g?
-
 Explain output format
 */
 

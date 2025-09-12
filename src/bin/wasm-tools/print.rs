@@ -1,12 +1,6 @@
 use anyhow::Result;
 use clap::Parser;
 
-/*
-TODO:
-Not sure if -g does anything. Does it depend on whether the input
-file contains debuginfo?
-*/
-
 /// Print the textual form of a WebAssembly binary.
 #[derive(Parser)]
 #[clap(after_help = "\
@@ -22,7 +16,7 @@ Examples:
     i32.add
  )
 
-    # Print a "skeleton" form of `foo.wasm` to stdout.
+    # Print a \"skeleton\" form of `foo.wasm` to stdout.
     $ wasm-tools print foo.wasm --skeleton
 (module
   (type (;0;) (func (param i32 i32) (result i32)))
@@ -83,6 +77,7 @@ pub struct Opts {
     name_unnamed: bool,
 
     /// Print instructions in the folded format.
+    /// (See https://webassembly.github.io/spec/core/text/instructions.html#folded-instructions)
     #[clap(short, long)]
     fold_instructions: bool,
 
